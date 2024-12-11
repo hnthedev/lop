@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Trái Cây Kỳ Diệu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .fruit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fruit-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .fruit-card:hover {
+            transform: translateY(-5px);
+            text-decoration: none;
+        }
+
+        .fruit-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .fruit-info {
+            padding: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ff6b6b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .media-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .media-container {
+            width: 100%;
+        }
+
+        audio, video {
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .side-by-side {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍎 Trái Cây 🍌</h1>
+        <p>Khám phá thế giới trái cây thơm ngon và bổ dưỡng!</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Các Loại Trái Cây Phổ Biến</h2>
+            <div class="fruit-grid">
+                <a href="https://vi.wikipedia.org/wiki/T%C3%A1o" class="fruit-card" target="_blank">
+                    <img src="https://media.post.rvohealth.io/wp-content/uploads/2021/06/apple-varieties-types-1200x628-facebook.jpg" alt="Táo Tươi">
+                    <div class="fruit-info">
+                        <h3>Táo</h3>
+                        <p>Táo là một trong những loại trái cây phổ biến nhất trên thế giới, nổi tiếng với vị ngọt và độ giòn đặc trưng.</p>
+                    </div>
+                </a>
+                <a href="https://vi.wikipedia.org/wiki/Chu%E1%BB%91i" class="fruit-card" target="_blank">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/ripe-yellow-bananas-at-the-shopping-market-fruits-royalty-free-image-1712833209.jpg" alt="Chuối Chín">
+                    <div class="fruit-info">
+                        <h3>Chuối</h3>
+                        <p>Chuối giàu kali và cung cấp năng lượng tức thì, là lựa chọn hoàn hảo cho các vận động viên.</p>
+                    </div>
+                </a>
+                <a href="https://vi.wikipedia.org/wiki/Cam" class="fruit-card" target="_blank">
+                    <img src="https://www.nutritionadvance.com/wp-content/uploads/2023/07/whole-and-half-oranges-1024x683.jpg" alt="Cam Tươi">
+                    <div class="fruit-info">
+                        <h3>Cam</h3>
+                        <p>Cam chứa nhiều vitamin C và nổi tiếng với khả năng tăng cường hệ miễn dịch.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="side-by-side">
+            <section>
+                <h2>Lợi Ích Sức Khỏe của Trái Cây</h2>
+                <ul>
+                    <li>Giàu vitamin và khoáng chất</li>
+                    <li>Hàm lượng chất xơ cao</li>
+                    <li>Chất chống oxy hóa tự nhiên</li>
+                    <li>Giúp duy trì cân nặng khỏe mạnh</li>
+                    <li>Giảm nguy cơ mắc bệnh mãn tính</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Cách Bổ Sung Trái Cây Vào Chế Độ Ăn</h2>
+                <ol>
+                    <li>Bắt đầu ngày mới với sinh tố trái cây</li>
+                    <li>Đặt một tô trái cây trên bàn làm việc</li>
+                    <li>Thêm trái cây vào salad</li>
+                    <li>Thay thế đồ tráng miệng bằng trái cây</li>
+                    <li>Mang trái cây làm đồ ăn nhẹ</li>
+                </ol>
+            </section>
+        </div>
+
+        <section>
+            <h2>Giá Trị Dinh Dưỡng của Trái Cây</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trái Cây</th>
+                        <th>Calo</th>
+                        <th>Chất Xơ (g)</th>
+                        <th>Vitamin C (mg)</th>
+                        <th>Kali (mg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Táo</td>
+                        <td>95</td>
+                        <td>4.5</td>
+                        <td>8.4</td>
+                        <td>195</td>
+                    </tr>
+                    <tr>
+                        <td>Chuối</td>
+                        <td>105</td>
+                        <td>3.1</td>
+                        <td>10.3</td>
+                        <td>422</td>
+                    </tr>
+                    <tr>
+                        <td>Cam</td>
+                        <td>62</td>
+                        <td>3.1</td>
+                        <td>69.7</td>
+                        <td>237</td>
+                    </tr>
+                    <tr>
+                        <td>Dứa</td>
+                        <td>50</td>
+                        <td>1.4</td>
+                        <td>47.8</td>
+                        <td>109</td>
+                    </tr>
+                    <tr>
+                        <td>Xoài</td>
+                        <td>99</td>
+                        <td>2.6</td>
+                        <td>36.4</td>
+                        <td>168</td>
+                    </tr>
+                    <tr>
+                        <td>Dâu Tây</td>
+                        <td>32</td>
+                        <td>2.0</td>
+                        <td>58.8</td>
+                        <td>153</td>
+                    </tr>
+                    <tr>
+                        <td>Kiwi</td>
+                        <td>61</td>
+                        <td>3.0</td>
+                        <td>92.7</td>
+                        <td>312</td>
+                    </tr>
+                    <tr>
+                        <td>Nho</td>
+                        <td>69</td>
+                        <td>0.9</td>
+                        <td>3.2</td>
+                        <td>191</td>
+                    </tr>
+                    <tr>
+                        <td>Lựu</td>
+                        <td>83</td>
+                        <td>4.0</td>
+                        <td>10.2</td>
+                        <td>236</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0;">
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    src="https://www.youtube.com/embed/Yh6IU96_YxI" 
+                    title="Video về trái cây" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nguồn Tham Khảo</h2>
+            <ul>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">Tổ Chức Y Tế Thế Giới - Chế Độ Ăn Lành Mạnh</a></li>
+                <li><a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/" target="_blank">Trường Y Tế Công Cộng Harvard - Rau Củ và Trái Cây</a></li>
+                <li><a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fruit-and-vegetables/art-20045989" target="_blank">Mayo Clinic - Rau Củ và Trái Cây</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>⭐ Tạo bởi Nguyên và Pog ⭐</p>
+    </footer>
+</body>
+</html>
