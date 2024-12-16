@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài kiểm tra thường xuyên</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- Inline stylesheet -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-3');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+        @media only screen and (min-width: 661px) {
+
+
+            html {
+                scroll-behavior: smooth;
+            }
+            * {
+                margin: 0; bottom: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Minecraft', sans-serif;
+                background-color: #111111;
+            }
+
+            main {
+                position: relative;
+            }
+
+            /* HEADER SECTION  */
+
+            .header {
+                width: 100%;
+                padding-top: 5px;
+                height: 4rem;
+                position: sticky;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(10px);
+                border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+                font-size: 20px;
+            }
+
+            .header img {
+                width: 3rem;
+                background-color: white;
+                margin-left: 1.5rem;
+                border-radius: 6.5px;
+                transition: background-color 0.5s ease;
+            }
+            .header img:hover {
+                background-color: rgb(9, 179, 9);
+            }
+
+            .header .navbar ul {
+                list-style-type: none;
+            }
+            .header .navbar ul li {
+                display: inline;
+                margin: 2rem;
+            }
+            .header .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.5s ease;  
+            }
+            .header .navbar ul li a:hover {
+                color: rgb(9, 179, 9);
+            }
+
+            .main {
+                margin-top: 0rem;
+            }
+
+            /* HOME SECTION  */
+
+            .home-section {
+                width: 100%;
+                height: 100vh;
+                background-color:#111111;
+                align-items: center;
+                border-bottom: 1px solid #fff;
+                padding-top: 4em;
+                margin-top: -4em;
+                margin-bottom: -6rem;
+            }
+
+            .home-section .hero-img-ctn {
+                background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/bedrock_header.jpg);
+                height: 70vh;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 5px solid #3b3b3b;
+                display: flex;
+                justify-items: end;
+                flex-direction: column;
+            }
+            .logo-ctn {
+                width: 100%;
+                height: 20vh;
+                background-image: url(https://images.seeklogo.com/logo-png/53/2/minecraft-logo-png_seeklogo-534116.png?v=638686301340000000);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+
+            /* CONCEPT SECTION  */
+            .concept-section {
+                background-color: #111111;
+                border-top: 5px solid rgb(47, 47, 47);
+                width: 40%;
+                min-width: 500px;
+                margin-left: 4rem;
+                margin-top: auto;
+                margin-bottom: -5px;
+                padding-bottom: 2rem;
+            }
+            .concept-section .hero-paragraph {
+                width: 100%;
+                color: white;
+                font-family: "Roboto Mono", monospace;
+                font-size: 1rem;
+                padding: 0rem 4rem;
+                min-width: 300px;
+                text-align: justify;
+            }
+
+
+            /* VIDEO SECTION  */
+            .video-section {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #111;
+                border-bottom: 5px dashed #494949;
+                color: #fff;
+                padding-top: 4em;
+                margin-top: -4em;
+                padding-bottom: 5rem;
+            }
+            .video-section h2 {
+                margin-top: 2rem;
+                font-size: 32px;
+            }
+            .video-section .video {
+                margin-top: 1rem;
+                width: 65%;
+                min-width: 600px;
+                aspect-ratio: calc(16/9);
+                margin-bottom: 2rem;
+                border: none;
+            }
+            .video-section .audio {
+                border-radius: 10px;
+                height: 5rem;
+                width: 50%;
+                min-width: 600px;
+                margin-bottom: 2rem;
+                margin-top: 0.7rem;
+                border: none;
+            }
+
+
+            /* TABLE SECTION  */
+            .table-section {
+                width: 100%;
+                background-color: 	#1e1e1e;
+                border-top: 5px dashed #494949;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 3rem;
+                padding-top: 4em;
+                margin-top: -4em;
+            }
+            .table-section h2 {
+                margin-top: 2rem;
+                font-size: 32px;
+                color: #fff;
+                margin-bottom: 2rem;
+            }
+            .table-section table {
+                width: 65%;
+                border-collapse: collapse;
+                background-color: #1e1e1e;
+            }
+            th, td {
+                border: 1px solid #333;
+                padding: 8px;
+                text-align: left;
+                color: #e0e0e0;
+            }
+            th {
+                background-color: #333;
+            }
+            tr:nth-child(even) {
+                background-color: #2c2c2c;
+            }
+            
+            tr:nth-child(odd) {
+                background-color: #414141;
+            }
+            tr:hover {
+                background-color: #3c3c3c;
+            }
+            .table-section .version-table th {
+                margin-top: 1rem
+            }
+
+            /* CONTACT SECTION  */
+            .contact-section {
+                padding: 1.5rem 1.5rem;
+                background-color: 	#111;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-section h2 {
+                margin-top: 1rem;
+            }
+
+            .contact-section .social-icon-container {
+                display: flex;
+                width: 40%;
+                justify-content: space-around;
+                font-size: 32px;
+            }
+            .contact-section .social-icon-container .icon {
+                cursor: pointer;
+                transition: color 0.5s ease;
+            }
+            .contact-section .social-icon-container .fb:hover {
+                color: rgb(15, 102, 224);
+            }
+            .contact-section .social-icon-container .dis:hover {
+                color: #7289da;
+            }
+            .contact-section .social-icon-container .x:hover {
+                color: rgb(255, 255, 255);
+            }
+            .contact-section .social-icon-container .ytb:hover {
+                color: red;
+            }
+            .contact-section a {
+                color: grey;
+                text-decoration: none;
+            }
+
+            .contact-section p:first-of-type {
+                margin-top: 0.5rem;
+                border-top: 1px solid #fff;
+            }
+            .contact-section p:last-of-type {
+                border-bottom: 1px solid #fff;
+            }
+            #creds {
+                color: rgba(255, 255, 255, 0.215);
+                font-size: 0.8rem;
+                position: absolute;
+                bottom: 0;
+            }
+            #creds p {
+                text-align: left;
+            }
+        }
+
+
+        @media (max-width: 660px) {
+            @import url('https://fonts.cdnfonts.com/css/minecraft-3');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+            html {
+                scroll-behavior: smooth;
+            }
+            * {
+                margin: 0; bottom: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Minecraft', sans-serif;
+                background-color: #111111;
+            }
+
+            main {
+                position: relative;
+            }
+
+            /* HEADER SECTION  */
+
+            .header {
+                width: 100%;
+                padding-top: 5px;
+                height: 4rem;
+                position: sticky;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(10px);
+                border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+                font-size: 1rem;
+            }
+
+            .header img {
+                width: 3rem;
+                background-color: white;
+                margin-left: 1.5rem;
+                border-radius: 6.5px;
+                transition: background-color 0.5s ease;
+            }
+            .header img:hover {
+                background-color: rgb(9, 179, 9);
+            }
+            .header .navbar {
+                margin-right: 15px;
+            }
+            .header .navbar ul {
+                list-style-type: none;
+            }
+            .header .navbar ul li {
+                display: inline;
+                margin: 0.1rem;
+            }
+            .header .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.5s ease;  
+            }
+            .header .navbar ul li a:hover {
+                color: rgb(9, 179, 9);
+            }
+
+            .main {
+                margin-top: 0rem;
+            }
+
+            /* HOME SECTION  */
+
+            .home-section {
+                width: 100%;
+                height: 100vh;
+                background-color:#111111;
+                align-items: center;
+                border-bottom: 1px solid #fff;
+                padding-top: 4em;
+                margin-top: -4em;
+                margin-bottom: -10rem;
+            }
+
+            .home-section .hero-img-ctn {
+                background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/bedrock_header.jpg);
+                height: 70vh;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 5px solid #3b3b3b;
+                display: flex;
+                justify-items: end;
+                flex-direction: column;
+            }
+            .logo-ctn {
+                background-image: url(https://images.seeklogo.com/logo-png/53/2/minecraft-logo-png_seeklogo-534116.png?v=638686301340000000);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+
+            /* CONCEPT SECTION  */
+            .concept-section {
+                background-color: #111111;
+                border-top: 5px solid rgb(47, 47, 47);
+                width: 90%;
+                margin-left: 5%;
+                min-width: none;
+                margin-top: auto;
+                margin-bottom: -5px;
+                padding-bottom: 2rem;
+            }
+            .concept-section .hero-paragraph {
+                width: 100%;
+                color: white;
+                font-family: "Roboto Mono", monospace;
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+                min-width: 300px;
+                text-align: normal;
+            }
+
+
+            /* VIDEO SECTION  */
+            .video-section {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #111;
+                border-bottom: 5px dashed #494949;
+                color: #fff;
+                padding-top: 4em;
+                margin-top: -4em;
+                padding-bottom: 5rem;
+            }
+            .video-section h2 {
+                font-size: 1.5rem;
+            }
+            .video-section .video {
+                margin-top: 1rem;
+                width: 95%;
+                aspect-ratio: calc(16/9);
+                margin-bottom: 2rem;
+                border: none;
+            }
+            .video-section .audio {
+                border-radius: 10px;
+                height: 5rem;
+                width: 95%;
+                margin-bottom: 2rem;
+                margin-top: 0.7rem;
+                border: none;
+            }
+
+
+            /* TABLE SECTION  */
+            .table-section {
+                width: 100%;
+                background-color: 	#1e1e1e;
+                border-top: 5px dashed #494949;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 3rem;
+                padding-top: 4em;
+                margin-top: -4em;
+            }
+            .table-section h2 {
+                margin-top: 2rem;
+                font-size: 32px;
+                color: #fff;
+                margin-bottom: 2rem;
+            }
+            .table-section table {
+                width: 65%;
+                border-collapse: collapse;
+                background-color: #1e1e1e;
+            }
+            th, td {
+                border: 1px solid #333;
+                padding: 8px;
+                text-align: left;
+                color: #e0e0e0;
+            }
+            th {
+                background-color: #333;
+            }
+            tr:nth-child(even) {
+                background-color: #2c2c2c;
+            }
+            
+            tr:nth-child(odd) {
+                background-color: #414141;
+            }
+            tr:hover {
+                background-color: #3c3c3c;
+            }
+            .table-section .version-table th {
+                margin-top: 1rem
+            }
+
+            /* CONTACT SECTION  */
+            .contact-section {
+                padding: 1.5rem 1.5rem;
+                background-color: 	#111;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-section h2 {
+                margin-top: 1rem;
+            }
+
+            .contact-section .social-icon-container {
+                display: flex;
+                width: 80%;
+                justify-content: space-around;
+                font-size: 32px;
+            }
+            .contact-section .social-icon-container .icon {
+                cursor: pointer;
+                transition: color 0.5s ease;
+            }
+            .contact-section .social-icon-container .fb:hover {
+                color: rgb(15, 102, 224);
+            }
+            .contact-section .social-icon-container .dis:hover {
+                color: #7289da;
+            }
+            .contact-section .social-icon-container .x:hover {
+                color: rgb(255, 255, 255);
+            }
+            .contact-section .social-icon-container .ytb:hover {
+                color: red;
+            }
+            .contact-section a {
+                color: grey;
+                text-decoration: none;
+            }
+
+            .contact-section p:first-of-type {
+                margin-top: 0.5rem;
+                border-top: 1px solid #fff;
+            }
+            .contact-section p:last-of-type {
+                border-bottom: 1px solid #fff;
+            }
+            #creds {
+                color: rgba(255, 255, 255, 0.215);
+                font-size: 0.8rem;
+                position: absolute;
+                bottom: 0;
+            }
+            #creds p {
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.minecraft.net/en-us" class="nav-logo"><img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/minecraft-8.png" alt="Water"></a>
+        <nav class="navbar">
+            <!-- Danh sach  -->
+            <ul>
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#video">Video</a></li>
+                <li class="nav-link"><a href="#table">Versions</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Anh -->
+        <section class="home-section" id="home">
+            <div class="hero-img-ctn">
+                
+                <section class="concept-section" id="concept">
+                    <div class="logo-ctn"></div>
+                    <div class="hero-paragraph">
+                        Minecraft is a sandbox game that allows players to build structures, explore vast blocky landscapes, gather resources, craft tools, and survive in a procedurally generated world filled with adventures and challenges.
+                    </div>
+                </section>
+            </div>
+            
+        </section>
+
+
+
+        <!-- Video  -->
+        <section class="video-section" id="video">
+            <h2>Minecraft Movie Trailer</h2>
+            <iframe src="https://www.youtube.com/embed/PE2YZhcC4NY" allowfullscreen class="video"></iframe>
+            <p>Bonus Music: </p>
+            <iframe  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270690977&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="audio"></iframe>
+        </section>
+
+        <!-- Bang bieu  -->
+        <section class="table-section" id="table">
+            <h2>VERSIONS</h2>
+            <table class="version-table">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Release Date</th>
+                        <th>Key Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.20 "Trails & Tales"</td>
+                        <td>June 7, 2023</td>
+                        <td>Archaeology, cherry blossom biome, camel mobs, hanging signs.</td>
+                    </tr>
+                    <tr>
+                        <td>1.19 "The Wild Update"</td>
+                        <td>June 7, 2022</td>
+                        <td>Deep Dark biome, Warden mob, mangrove swamp biome, frogs.</td>
+                    </tr>
+                    <tr>
+                        <td>1.18 "Caves & Cliffs: Part II"</td>
+                        <td>November 30, 2021</td>
+                        <td>Improved world generation, taller mountains, deeper caves.</td>
+                    </tr>
+                    <tr>
+                        <td>1.17 "Caves & Cliffs: Part I"</td>
+                        <td>June 8, 2021</td>
+                        <td>Amethyst geodes, axolotls, goats, copper blocks.</td>
+                    </tr>
+                    <tr>
+                        <td>1.16 "Nether Update"</td>
+                        <td>June 23, 2020</td>
+                        <td>New Nether biomes, bastions, piglins, netherite.</td>
+                    </tr>
+                    <tr>
+                        <td>1.15 "Buzzy Bees"</td>
+                        <td>December 10, 2019</td>
+                        <td>Bees, bee nests, honey blocks.</td>
+                    </tr>
+                    <tr>
+                        <td>1.14 "Village & Pillage"</td>
+                        <td>April 23, 2019</td>
+                        <td>New villager professions, pillagers, bamboo, pandas.</td>
+                    </tr>
+                    <tr>
+                        <td>1.13 "Update Aquatic"</td>
+                        <td>July 18, 2018</td>
+                        <td>Underwater biomes, dolphins, tridents, conduits.</td>
+                    </tr>
+                    <tr>
+                        <td>1.12 "World of Color Update"</td>
+                        <td>June 7, 2017</td>
+                        <td>Concrete blocks, glazed terracotta, parrots.</td>
+                    </tr>
+                    <tr>
+                        <td>1.11 "Exploration Update"</td>
+                        <td>November 14, 2016</td>
+                        <td>Woodland mansions, llamas, explorer maps.</td>
+                    </tr>
+                    <tr>
+                        <td>1.10 "Frostburn Update"</td>
+                        <td>June 8, 2016</td>
+                        <td>Polar bears, strays, husks, magma blocks.</td>
+                    </tr>
+                    <tr>
+                        <td>1.9 "Combat Update"</td>
+                        <td>February 29, 2016</td>
+                        <td>Dual wielding, shields, end cities, elytra.</td>
+                    </tr>
+                    <tr>
+                        <td>1.8 "Bountiful Update"</td>
+                        <td>September 2, 2014</td>
+                        <td>Ocean monuments, guardians, slime blocks, banners.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sieu lien ket  -->
+        <section class="contact-section" id="contact">
+            <div class="social-icon-container">
+                <a href="https://www.facebook.com/minecraft" target="_blank"><i class="ri-facebook-circle-fill fb icon"></i></a>
+                <a href="https://discord.com/invite/minecraft" target="_blank"><i class="ri-discord-fill dis icon"></i></a>
+                <a href="https://x.com/Minecraft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="ri-twitter-x-fill x icon"></i></a>
+                <a href="https://www.youtube.com/@minecraft" target="_blank"><i class="ri-youtube-fill ytb icon"></i></a>   
+            </div>
+        </section>
+    
+    <div id="creds">
+        <p>Minecraft demo webpage<br>Creator: Duong Van Huy & Nguyen Hoang Nguyen</p>
+    </div>
+    </main>
+
+
+    <!-- Inline Scripts -->
+    <script>
+
+    </script>
+</body>
+</html>
